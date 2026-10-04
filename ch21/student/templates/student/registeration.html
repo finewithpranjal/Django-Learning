@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Registration</h1>
+
+    <h3>Complet Form at once </h3>
+   <form action="">
+    <!-- Complet Form at once  -->
+    {{form}}
+   </form>   
+   <hr>
+    <h3>Form feild by feild</h3>
+     <!-- Form feild by feild -->
+      <form action="">
+       First Name :  {{form.first_name}} <br>
+       Last Name : {{form.last_name}}
+      </form>
+   <hr>
+    <h3>Form label and input</h3>
+     <!-- Form label and input -->
+      <form action="">
+       {{form.first_name.label_tag}} :  {{form.first_name}} <br>
+       {{form.last_name.label_tag}} : {{form.last_name}}
+
+       <h3>or you can use the html directly</h3>
+        <label for="">First Name </label> : {{form.first_name}} <br>
+        <label for="">Last Name </label> : {{form.last_name}}
+      </form>
+
+
+      <hr>
+      <div>
+        {{form.first_name.label}}
+        {{form.first_name.value}}
+        {{form.first_name.html_name}}
+        {{form.first_name.field.required}}
+        {{form.first_name.help_text}}
+      </div>
+
+      <h3>Using for loop</h3>
+      
+</body>
+</html>

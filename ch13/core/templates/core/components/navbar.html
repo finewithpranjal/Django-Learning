@@ -1,0 +1,9 @@
+<nav>
+    <ul>
+        <li><a href="{% url 'homepage' %}">Home</a> </li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'django' %}">Django</a></li>
+        {% url 'python' as py %}
+        <li><a href="{{py}}">Python</a></li>
+    </ul>
+</nav>

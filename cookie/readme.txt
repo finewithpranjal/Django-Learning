@@ -1,0 +1,11 @@
+HttpResopnce.set_cookie(
+  key,
+  value='',  
+  max_age=None,   
+  expires=None,
+  path='/',
+  domain=None,
+  secure=False,
+  httponly=False,
+  samesite=None
+)

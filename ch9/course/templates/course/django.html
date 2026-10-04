@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'course/css/style.css' %}">
+</head>
+<body>
+    <h1>{{nm}} with static files</h1>
+    <img src="{% static 'course/images/png1.jpg' %}" alt="Mountain" width="200px">
+    <img src="{% get_static_prefix %}course/images/png1.jpg" alt="Mountain" width="300px">
+    <form action="">
+        <input type="button" value="Click" onclick="disp()">
+    </form>
+   <script src="{% static 'course/js/scripts.js' %}"></script>
+
+   
+</body> 
+</html>  
